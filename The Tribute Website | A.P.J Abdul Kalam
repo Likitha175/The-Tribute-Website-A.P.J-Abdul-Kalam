@@ -1,0 +1,114 @@
+#The Tribute Website | A.P.J Abdul Kalam
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tribute Website | A.P.J Abdul Kalam</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    *{
+       margin:0;
+       padding:0;
+       box-sizing: border-box;
+    }
+   .Container{
+        background-color:lightblue;
+        min-height: 100vh;
+        border: 10px solid ;
+    }
+    .content {
+        max-width:900px;
+        margin: 0 auto;
+    }
+    .top-section {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .top_section h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+    }
+    .top_section h4 {
+        font-size: 30px; 
+        text-align: end;
+    }
+    .image-container,
+    img{
+        width: 300px;
+        height: 320px;
+    }
+    .about_section {
+        margin-top: 50px;
+    }
+    .about_section h2 {
+        font-size: 70px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .about_section p {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing:2px;
+        text-align: justify;
+    }
+    .biography_section {
+        margin:50px 0;
+    }
+    .biography_section h3{
+        margin-bottom: 20px;
+    }
+    .biography_section ul{
+        margin-left: 50px;
+    }
+    .biography_section li {
+        margin-bottom: 15px;
+    }
+    footer{
+        margin:50px 0;
+    }
+    footer p {
+        text-align: end;
+    }
+</style>
+</head>
+<body>
+    <div class="Container">
+        <div class="content">
+            <section class="top-section">
+                <div class="image-container">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAmgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcCAQj/xAA8EAACAQMCAwYEAwYFBQEAAAABAgMABBEFIQYSMRMiQVFhcQcygZEUUqEVQnKxwdEjM2Lh8BZEkrLxQ//EABoBAAIDAQEAAAAAAAAAAAAAAAACAQMEBQb/xAAmEQACAwABBAEDBQAAAAAAAAAAAQIDESEEEiIxQQUyQhNRUmFx/9oADAMBAAIRAxEAPwDD6KKKACiiigAooooAKKK6jRpHVI1LOxAVVGSSfAUAEcbyOqRqWZjhQBkk+VXzh74T8Q6sqzXipptuwyGn3cj+EHP3q+/D/gCx4es7fVdXi7XVWXnCyYK2+egA/N6+fTarfd6ryIHdsK3y5O5/2/n4VZGvSqVvOIpdp8HOH4FH4y/u7hzvsQg9hXeqfBzQ7uzddImuLW7AyjSNzoT5EdftVqSe7ny0aGNMdW2J9h4e/wClO7NirqCZgfzMI+v3zTOCSK1ZLTJtR+CGr29n29lqlndSAZMRRo8+x3/XFZvqmlX2kzmDUbWW3lBxhxsfY9D9K+uoA08LowUnHmRmqPxpokF7avbzxGaMd4pjvp6qf6UkYdzxF/cfOFFSfEGkyaRqDW7HmjI5o3/MuajKVrOBgoooqACiiigAooooAKKKKACiiigArXfgtwcsrHibUUAijJW1RhsW/P8AzA+tZhoumzavqtrp9v8APPIFyPAdSfoMmvqBrSLTdKsdF04CMKgTb91QME00FrEsliEL27hZHupzzW0ROAf/ANWx4enhnyplpSS30y3kyhp5TiFMfIBnfHh/T3zllqkgu7+Oyh/yIDuOucHAz9ck+x86d6klxDwxLJbsYpLzs7aE5xyIWwfqQDv50901COiUQ75YTEeqaNA5iGoW7TE4LZByfQ9PtUilwhAKuzDGdn8PPHjVfsOH7OyhWMIWIAyxJ3p/HbJAgEPdA3A8Kwx6qX5I6Eujhviybt1jM7EAFcbVF69aZXtonZWQZG26+vqKay3NxEuISpAqr3XFOradqcP7Tmjn01nCSr2YDRA7cwPjj1q2vqoKeEPo55qK5xzoaahHMsUSiQqZIgP3XHVR79PtWO19D8TR9jNgL+/09f8AmPvWFcRwC31q8QDCtJzqPRt/61rtj+SM2/BG0UUVQAUUUUAFFFFABRRRQAUUUpbxSXE0cMCGSWRgiIo3ZicACgDS/gZo/wCI1i61aVT2FrHyKT4s2+B9APvWpyXEk15d3APKYk5I89A7HlH2zTbhPRF4W4cj01CHnRTJcyY+aQ78vsNh9q40eVDbMJG3kPNzHwYEFc/WroJJFE+WIadbqgl/O0TP9yqforGpriCHnt7KONHMfcwEx4bj9RVeiuVh1dV1FJYFgdnUouVmQkjAx/F0qQk4rsIlhjmguJVDMAI8F0wduZc5/wDlZepalFx019OnFp4SzXD8gDxchx4jFN/xki7csuPVOYfcV6vENjeIrWkizQscFiuCPcGkWvbWSfsVHXfutgY865djcXmnVrjq1xEL+7YRH5Mn3U1S9fC3Clbkkxj5wBnI8RVx1C2tZFxHL3vXcVWZtKkubkRydy3BzK5OwHvVdanKxGlSrVbJvXjNPYWM8wC3MtunaAeEnZIx396xXjiIrrHOB3GUhfoxrbNfkJ/Z8TLyOzM/Ieqry7A+vKVz6nHhWTcfW3PELlekVyYz7MoI/wDU/evRvXWedbWlKoooqgAooooAKKKKACiiigArSfgXpMN9xPc39woYafb88YIOzscA/Qc1ZtWi/BTiCy0fXrqy1BzFHqUaxJL4K4JwD75P1xQgZuOrxiPS5wSFcKCx8t8k/eqHdXMy4SxilLSyco5MAAnr12I/5jrV71GbnjkaNyy7h3jGRvVN0/T7e21BTBgBWyFUtgD2PT+VF1jhXoUQVk8ZIHRJ2tlF9cugbByo5sfSoHiNbuOWNVvrprVBgI0UcsZ8ugHLj/TWnFLaexV5nA5VxjO1VDV7bhmMmW6aBN/lDHB+gO9cuxyXO+zqUJbmeiocOW88upoxcdjKeXmU5J9x1zTjjW8l0a5jihJYsmwXqKvGi6LYIpvYIXXlBKB4+Tl227uBVE4xtZJtSF05CSFgqnO538qzuGPukaoWObaiQtjxfqxlwk1pbQjGFlj5sknAycHx9qlE451MTfhb+G2PMQY3gQHl8mGMgmiay1C1gRoBLJEw3UgYX6VXLyzCh5+8kpJOGGPuBW6u+MXiKLOmbTeltTUPxU73suezii7KJWbJck5OT6nGfYVUOIWFzw9qDLlj24cewbGftmkDeyw2vJPcrLOQTyJ8kYPgPX19/PdaEJPaNZs20kGGz+bJ3P8A5V11LY4cZryKDRXrgqxVgQw2IIwQa8rMMFFFFABRRRQAUUUUAFPtDkEWsWMjfKtzETnpsw602tbae8nWC1gknlbpHEpZj9BWq/Dj4bajDqkWq6/D+Fig70VsxBeRsY7w3wPQ71KWgWq0Mtjp8sjXUiXEbPG+QGDAE8uQeu2N/CutPmARpXOTgFj5nrUjxTd2eixyXjI/fwCE/ePQY8tqq1hqn4q4nhlHZyOO0Uean+24rD9T1wXaavpyUbGpfIpreu3cc0dha/5s7gBmzyqD41K6Rwh2bJfXchubkHnDSjIz7eVVfVpA8lpKP82Jxgjzz/bNWnTW10RSm61IRQDHZyfge1UjI2YKeZSN9+hxWHp0pR/s6vUTcf8ACfl4mtY4ZkugIpywRkQ5HnkVnmtalDeXFy1vI7XII7GRG2iHiT6+lLcS2V0XF1NCkokBPa2dzgEDGcqxBB3Hn1qtPqNjbwdmsFzH5Dss5P3q9xm/uRXU6ox8WWvS+JxcQGzv1CXC9SvRx51XOJpUzIIj3Svh4VCs9xcTvMoMXY+ZGd/DavNTuG7LvtuRvSqvzRZKxKDwhoGJfOTgHxGw/vUlazlUuJXBI5eQA+Pn+n86bpLAndlQqwG4A60TXacjTOvJDEpEajoz+AP/ADoPpXZg+NPPvlkPqzrJqVyy9DIT9fH9c00r1jk5zn1rykJCiiigAr0DPjQK1X4Z8C2zJHq/EECy83etrOQZGMbM4/kD7mgCk8PcFcQ8RMv7M0yZoT/3Eg5IsefMdj9M1p/DvwRtYAk3EmpNO43NvZHlT2LkZP0ArT7bUVAVWRVQbDsxsB7U8Lq4Bj72ejeFNgEZpOjaVoFsYdG0+C0U9TGveb+JjufqaUdzndsny6mnEoP7x+gqPurpbYZA28hTIMKn8TbWafSo5YlbkjcM+ap7n8TaRT2rDt4ht4EjxBrUrvsdT0+SJgCGUgishuI5dI1OSBshObHpist8d5Q8W0OtI1C3u7yP8QuSrZdenv8A71c7i7vLO2drCNriNwO6BkrWa6tZSE/tCxJBzmQL1/ip5pHHF9pkZimRipGOdV5vvWCVDUu6s6NXVKXE/ZNScW3cIaKa1u4h0VVJ5R9KhpruXVLzmCMD1LN1+p/vS3/W8c3adssExb8wG30qC1PXmlVkt0CBjvyJyipj+rL7kbJ2xzhoUvpo4JBBF3991XcsasnA/Cdrr34v9trcxkdxUUhQQwBDA43xhgfDpVc4MgE+pPcvh+wRmBPmdh/M1pGi3ZiukOcZwCPA1qrUYz8jl33OaxeiKvPhfFYRvPardanyglLdZ1RvqWGKyziYait8Y9T0+TTymRFbvGV5Rnwz83vX05Gw5QVJHjsa5vbW11KA2+o2tvdwHrHOgYfY1vcP2MZ8mUVqnxG+GsGnW76rw6HMK5aayY5MY8WQ+I9DWVmq2sAKKKKgC3cHaZGsi3t1CssmQYEbfB/MR4+ntWx6fKYIITIe+RlgazPhvs4GhSM8yoq4P0Gf1q/W0xlUFqXR84LGs67EdKk9KuAyNFn5dx7VW4WOOtOre6/DTpLnZfmHmvjTKRGFhlf1qJ1KLtIjjqBSt3exxyBCa7Vlkj8wRVnD4IIGxuTDMUc4WoTjXSluMXMYzjcmpjVYjFNzr0NJLOt1bNBJucVnf8WMZ7aSvE3Ifl6V1NpoLdraqGDfNF/anOqWbW10du7mubeRk2XpWdpxfAy5IifS4tTmisgqQ3MjhI3kGMEnx9Kk9D4HW1d7jiZ0t7WN8CFJOZp/qDsv6n0p+UjuSCyYcbhh1B9KbT32o/8AUOnxXt000LB40BAzkjz8TTKbYyli4HkMaRXN9cJEsTXkqkQoAFijUYUbeOAM09tpCsin1pC5ge2nZHIyOuK6i+YCs7k3LWCzDQdPl57ZCeuKcs3dJFQtrP2FmmeuKkrOYTx8wrrwnqSK2hJ5i/MpO46A1gvxJ0OHRdfJsk5LS8Tt40A2jOSGQexH2Irb75uznHlWa/GS3BttNuvHtHXPuAf6VW2K0ZdRRRUEF+0h+WZSdt6vWmSd0b1n9m3ez41bNAueZuQnOKqLC2xHIrm4bC5H2pNJAq5prfXqhCoxmpb4AdTsXt4peYkoOUn2p9puoLJGIy29V60vcxtESMNvSCT9jNlG6GoUyMLfqEYlhJ8arbMYJT6Gpew1BLmLGcN61F6soSQsD1qZ8+SBCOqWq3lt2ijvCqsQY3wRjerRZXSo3JIe6aidYtgs/MnyneqpY+STyxxIeu9d6nZgzWF0u/4e7iZvVS3Kf5imFrIYnyDTyW9WaMptkEMfoc/0pUA61eV2u27Q8zA4zjFe6fEZZ126Gm97IZLxmJzk1NaHD++enhVajsx16Ht03Kqp4VJaM/InJ51C3TZugq1MWUZUqc+Fa62+7UKxTU0HMDVd13h6PiexbTC3LcYZ7RycBZQDgH0OSD9KsF7zE4xmmlu3Y3lvMwxySqc+W/WnlrfAqR85XMEttPJBOhSWJ2R0PVWBwR96SrSfjpo6WPFMOowoqx6lB2hwMZkXZj9QVNZtUi4XK0fuAjy++KndFuOWcMp96ptnNIYQnOpA/eU59andHuAjgE1U8TGRosc4eDOelQ17L3jXUNxyxBlbY9RTS4kDHbxpJEiRuTGwPrSiT87UyuB3Qa6t23FVE4SS3Ulu/Mpru61N7gDm60gF5lppKpVqZNgx0sueldS3AkXDHpTFXINDv60aQcyHBNN0f/Hwfymu3bNNC3+KDUATsZ7aRc+Zq1QSJb2oA2OKp1kxJFTIlYqATsKmPA4/t27SfnbzqahnxjBquxyAYxT2C43G9X1+KEZO556bXkH+G3+oYNcQ3AxXtxcqIWz1NXb8kLUUz43yC64d4cuSFLq8sZOOhwu36Vj2PStP+Jc08mgRhN4EuwT/AKSVI+mcVmFL7Fl7JDR2P4pV8CpqfgAWbA8s0UVVYMi16Uolsgzkk5rmXYkUUVW/RI3uP8k0lCSFWiiqmMiUtTkYNeXCDFFFMiGR0mx2pPNe0UEITk6U2Pz0UUEsldN6ipViQNqKKZEo9R2zTuFjRRVqFHsbnFcTyNykelFFOBB8RQpccF60JP3CrqR4FSCP6/esdLb9BRRUoR+z/9k=" alt="tribute">
+                </div>
+                <div>
+                    <h1>A.P.J Abdul Kalam</h1>
+                    <h4>1931 - 2015</h4>
+                </div> 
+            </section>
+            <section class="about_section">
+               <h2>Missile Man Of India</h2>
+               <p><b>Avul Pakir Jainulabdeen Abdul Kalam</b> (/ˈəbdʊl kəˈlɑːm/ ⓘ; 15 October 1931 – 27 July 2015) was an Indian aerospace scientist and statesman who served as the president of India from 2002 to 2007.
+                   Born and raised in a Muslim family in Rameswaram, Tamil Nadu, he studied physics and aerospace engineering. He spent the next four decades as a scientist and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Organisation (ISRO) and was intimately involved in India's civilian space programme and military missile development efforts. He was known as the "Missile Man of India" for his work on the development of ballistic missile and launch vehicle technology. He also played a pivotal organisational, technical, and political role in India's Pokhran-II nuclear tests in 1998, the second test since the first nuclear test by India in 1974.</p>
+            </section>
+            <section class="biography_section">
+                <h3>Biographies</h3>
+                <br>
+                <ul>
+                    <li>Born: 15 October 1931, Rameswaram</li>
+                    <li>Died: 27 July 2015 (age 83 years), Shillong</li>
+                    <li>Awards: Bharat Ratna, Veer Savarkar Award, Padma Bhushan,<a href="https://www.google.com/search?sa=X&sca_esv=0c36c686c589dc21&rlz=1C1UEAD_enIN1122IN1122&sxsrf=AHTn8zpAQ6lX9gq3f5cCON71ScxQMyYExw:1739856863678&q=a.+p.+j.+abdul+kalam+awards&stick=H4sIAAAAAAAAAOPgE-LQz9U3SK80TtOSzU620k8sTyxKgZDx5Zl5ealFVmBO8SJW6UQ9hQI9hSw9hcSklNIchezEnMRcBYgsAAk4OERJAAAA&ved=2ahUKEwix88byv8yLAxWU1TgGHUWMPZcQ44YBKAN6BAgsEAU&biw=1280&bih=593&dpr=1.5">See more.</a></li>
+                    <li>Presidential term: 25 July 2002 – 25 July 2007</li>
+                    <li>Previous offices: President of India (2002–2007), Principal Scientific Adviser to the Government of India (1999–2001)</li>
+                    <li>Buried: 30 July 2015, Dr. A.P.J. Abdul Kalam Memorial</li>
+                </ul>
+            </section>
+            <footer>
+                <p>Read more about A.P.J Abdul Kalam On <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">Wikipedia.</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
